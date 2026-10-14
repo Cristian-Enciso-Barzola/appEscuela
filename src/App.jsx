@@ -1,7 +1,6 @@
 import Navbar from './components/Navbar/Navbar';
 import AlumnoCard from './components/AlumnoCard';
 import Contador from './components/Contador/Contador';
-import Footer from './components/Footer/Footer';
 
 function App() {
   return (
