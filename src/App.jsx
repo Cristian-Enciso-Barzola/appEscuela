@@ -1,5 +1,7 @@
 import Navbar from './components/Navbar/Navbar';
-import AlumnoCard from './components/AlumnoCard';
+import AlumnoCard from './components/AlumnoCard/AlumnoCard';
+import Contador from './components/Contador/Contador';
+import Footer from './components/Footer/Footer';
 
 function App() {
   return (
@@ -11,54 +13,54 @@ function App() {
       <div className="container">
         <h2 className="mb-4">Directorio de Alumnos</h2>
         
+        {/* Componente Contador interactivo (Guía #3) */}
+        <Contador />
+
         <div className="row">
-          {/* Tarjetas anteriores */}
           <AlumnoCard
             nombre="Daniel Puccio"
             carrera="Desarrollo de Software"
-            estado="Matriculado"
+            estadoInicial="Matriculado"
           />
           <AlumnoCard
             nombre="Maria Perez"
             carrera="Diseño Gráfico"
-            estado="Inactivo"
+            estadoInicial="Inactivo"
           />
           <AlumnoCard
             nombre="Carlos Mendoza"
             carrera="Administración Industrial"
-            estado="Matriculado"
+            estadoInicial="Matriculado"
           />
           <AlumnoCard
             nombre="Ana Torres"
             carrera="Redes y Seguridad"
-            estado="Matriculado"
+            estadoInicial="Matriculado"
           />
           <AlumnoCard
             nombre="Jorge Quispe"
             carrera="Mecatrónica Industrial"
-            estado="Inactivo"
+            estadoInicial="Inactivo"
           />
-
-          {/* Nuevas tarjetas adicionales */}
           <AlumnoCard
             nombre="Lucía Huamán"
             carrera="Ingeniería de Software con IA"
-            estado="Matriculado"
+            estadoInicial="Matriculado"
           />
           <AlumnoCard
             nombre="Miguel Ángel Ramos"
             carrera="Soporte y Mantenimiento de Equipos"
-            estado="Inactivo"
+            estadoInicial="Inactivo"
           />
           <AlumnoCard
             nombre="Rosa Fernández"
             carrera="Administración de Empresas"
-            estado="Matriculado"
+            estadoInicial="Matriculado"
           />
           <AlumnoCard
             nombre="David Silva"
             carrera="Diseño y Desarrollo Web"
-            estado="Matriculado"
+            estadoInicial="Matriculado"
           />
         </div>
       </div>
